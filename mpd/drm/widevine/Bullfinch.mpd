@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<MPD mediaPresentationDuration="PT14.414S" minBufferTime="PT8.34S" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=1.8.0-629 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet maxHeight="1080" maxWidth="1920" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection cenc:default_KID="0294b959-9d75-5de2-bbf0-fdca3fa5eab7" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <!-- Widevine -->
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAVXBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADUIARIQApS5WZ11XeK78P3KP6XqtxoNd2lkZXZpbmVfdGVzdCIQZmtqM2xqYVNkZmFsa3Izag==</cenc:pssh>
+      </ContentProtection>
+      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number%05d$.m4s" startNumber="1" timescale="1000">
+        <SegmentTimeline>
+          <S d="8342"/>
+          <S d="6072"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation bandwidth="4616965" codecs="avc1.640028" frameRate="216000/7207" height="1080" id="video/avc1/1" scanType="progressive" width="1920"/>
+      <Representation bandwidth="2278899" codecs="avc1.64001F" frameRate="216000/7207" height="720" id="video/avc1/2" scanType="progressive" width="1280"/>
+      <Representation bandwidth="760143" codecs="avc1.64001E" frameRate="216000/7207" height="360" id="video/avc1/3" scanType="progressive" width="640"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet lang="en" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection cenc:default_KID="0294b959-9d75-5de2-bbf0-fdca3fa5eab7" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <!-- Widevine -->
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAVXBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADUIARIQApS5WZ11XeK78P3KP6XqtxoNd2lkZXZpbmVfdGVzdCIQZmtqM2xqYVNkZmFsa3Izag==</cenc:pssh>
+      </ContentProtection>
+      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number%05d$.m4s" startNumber="1" timescale="1000">
+        <SegmentTimeline>
+          <S d="2005"/>
+          <S d="1984"/>
+          <S d="2006"/>
+          <S d="2005" r="1"/>
+          <S d="1984"/>
+          <S d="2006"/>
+          <S d="447"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation audioSamplingRate="48000" bandwidth="143225" codecs="mp4a.40.2" id="audio/en/mp4a">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

@@ -1,0 +1,65 @@
+
+video {
+    width: 640px;
+    height: 360px;
+    z-index: 100;
+}
+
+#videoArea {
+    width: 640px;
+    height: 370px;
+    background-color: black;
+    position: relative;
+}
+
+#screen {
+    display: none;
+}
+
+#loading {
+    display: none;
+    background: url(../common/spinning-circles.svg) no-repeat 0 0;
+    background-position : 50% 50%;
+    width: 640px;
+    height: 360px;
+    z-index: 500;
+}
+
+#seekbar {
+    position: absolute;
+    outline: thin solid red;
+    overflow: hidden;
+    top: 360px;
+    width: 100%;
+    height: 10px;
+    z-index: 300;
+}
+  
+#seekbar #seekbarLine {
+    position: absolute;
+    background-color: red;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: 0px;
+    z-index: 300;
+}
+
+#seekbar #bufferLine {
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: 0px;
+    z-index: 200;
+}
+
+.playerControlTimer {
+    position: absolute;
+    width: 180px;
+    color: black;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
