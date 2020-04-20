@@ -4,9 +4,9 @@
         url: '../../mpd/drm/clearkey/Bullfinch.mpd',
         title: 'bullfinch-男性-鳥-2797',
         drm: {
-            "org.w3.clearkey": {
-                "clearkeys": {
-                    "OCYfniLWkYVAQNXDwaqUeQ": "jfUe14GofJhw1Sw0yde2eQ"
+            'org.w3.clearkey': {
+                'clearkeys': {
+                    'OCYfniLWkYVAQNXDwaqUeQ': 'jfUe14GofJhw1Sw0yde2eQ'
                 }
             }
         }

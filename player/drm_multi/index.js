@@ -4,11 +4,11 @@
         url: '../../mpd/drm/multi/Bullfinch.mpd',
         title: 'bullfinch-男性-鳥-2797',
         drm: {
-            "com.widevine.alpha": {
-                serverURL: "https://widevine-proxy.appspot.com/proxy",
+            'com.widevine.alpha': {
+                serverURL: 'https://widevine-proxy.appspot.com/proxy',
             },
-            "com.microsoft.playready": {
-                serverURL: "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,contentkey:O9ovQDRMfe9hQie5wPA+Jg==)",
+            'com.microsoft.playready': {
+                serverURL: 'https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,contentkey:O9ovQDRMfe9hQie5wPA+Jg==)',
             }
         }
     };

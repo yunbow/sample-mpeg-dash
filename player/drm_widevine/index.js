@@ -4,8 +4,8 @@
         url: '../../mpd/drm/widevine/Bullfinch.mpd',
         title: 'bullfinch-男性-鳥-2797',
         drm: {
-            "com.widevine.alpha": {
-                serverURL: "https://widevine-proxy.appspot.com/proxy",
+            'com.widevine.alpha': {
+                serverURL: 'https://widevine-proxy.appspot.com/proxy',
             }
         }
     };

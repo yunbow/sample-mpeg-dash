@@ -4,8 +4,8 @@
         url: '../../mpd/drm/playready/Bullfinch.mpd',
         title: 'bullfinch-男性-鳥-2797',
         drm: {
-            "com.microsoft.playready": {
-                serverURL: "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,contentkey:jfUe14GofJhw1Sw0yde2eQ==)",
+            'com.microsoft.playready': {
+                serverURL: 'https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,contentkey:jfUe14GofJhw1Sw0yde2eQ==)',
             }
         }
     };
